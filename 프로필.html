@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="주현 프로필" />
+        <meta property="og:description" content="어서와" />
+        <meta property="og:image" content="사진.png" />
+        <title>주현 프로필</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body{
+                /*background-color: aqua;*/
+                background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_myprofile/%ED%8C%AC+%ED%8E%98%EC%9D%B4%EC%A7%80/%EA%B5%AC%EB%A6%84%EB%B0%B0%EA%B2%BD.png');
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+            }
+            .profile{
+                width: 150px;
+                height: 150px;
+
+                background-color: #44398A;
+                border-radius: 100%;
+                margin: 10px;
+
+                border: 2px solid white;
+
+                background-image: url('사진.png');
+                background-position: center;
+                background-size: cover;
+            }
+            .main{
+                color: black;
+                font-size: 20px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            
+            }
+            .sub{
+                color: #253562;
+                font-size: 14px;
+                margin-top: 0px;
+                
+            }
+            .subt{
+                color: #253562;
+                font-size: 13px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+
+            }
+            .subb {
+            color : #e9ab60;
+            font-size: 12px;
+            font-weight: 500;
+            size : 14px;
+            margin-top: 0px;
+            margin-bottom: 5px;
+        }
+        .subs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 13px;
+            margin-bottom: 10px;
+        }
+            .wrap{
+                background-color: white;
+                width: 400px;
+                margin: 30px auto 0px auto;
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a{
+                width: 300px;
+                height: 50px;
+
+                background-color: rgb(236, 237, 177);
+                border-radius: 8px;
+                margin-bottom: 10px;
+
+                font-size: 14px;
+                font-weight: bold;
+                color: #44398A;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+                box-shadow: 3px 3px 5px 0px black;
+
+
+            } 
+            .wrap > a:hover{
+                background-color: rgb(137, 208, 211);
+                /*font-size: 20px;*/
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="profile"> </div>
+            <h1 class="main"> 주현 </h1>
+            <p class="sub"> About me </p>
+            <p class="subt">백앤드 개발자를 향해 한걸음 나아가는 개발자</p>
+            <div class="subs">
+                <p class="subb">#Java</p>
+                <p class="subb">#Spring</p>
+                <p class="subb">#Github</p>
+                <p class="subb">#MySQL</p>
+            </div>
+            <a target="_blank" href="https://velog.io/@geangdeang">블로그</a>
+            <a target="_blank" href="https://github.com/gyeongdeang">Github</a>
+            
+        </div>
+     
+    </body>
+</html>
